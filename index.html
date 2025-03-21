@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="/storage/emulated/0/DCIM/Camera/IMG_20240615_121103~2.jpg" alt="Your Profile Picture" class="profile-picture">
+           <h1>Komathy B</h1>
+            <p>Am Bachelor of computer Application </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'am B.komathy a BCA student specializing in Computer Application. I'm passionate about software development, artificial intelligence, and data science. With proficiency in Java, Python, and C++, I've worked on several projects, including a web development project using HTML, CSS, and JavaScript. Outside of academics, I enjoy coding, reading, and playing sports. My career goal is to become a software developer and work on innovative projects that make a positive impact on society .</p>
+
+        </div>
+    </section>
+
+    <section id=Bachelor of computer application>
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Madras University  - BCA</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Html</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Registration form for HTML with Css code</a></li>
+                <li><a href="#">IBM chatbot</a></li>
+                <li><a href="#">College Portal</a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="/storage/emulated/0/Pictures/Canva/White Simple Student CV Resume_20250319_094902_0000.png" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Komathy B</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Day Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        input[type="text"], input[type="number"], select, input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sports Day Registration</h2>
+        <form action="/submit_registration" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="event">Event Selection</label>
+                <select id="event" name="event" required>
+                    <option value="100m">100m Race</option>
+                    <option value="200m">200m Race</option>
+                    <option value="relay">Relay Race</option>
+                    <option value="long_jump">Long Jump</option>
+                    <option value="high_jump">High Jump</option>
+                    <option value="shot_put">Shot Put</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Emergency Contact Number</label>
+                <input type="number" id="contact" name="contact" required>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Day Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        input[type="text"], input[type="number"], select, input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sports Day Registration</h2>
+        <form action="/submit_registration" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="event">Event Selection</label>
+                <select id="event" name="event" required>
+                    <option value="100m">100m Race</option>
+                    <option value="200m">200m Race</option>
+                    <option value="relay">Relay Race</option>
+                    <option value="long_jump">Long Jump</option>
+                    <option value="high_jump">High Jump</option>
+                    <option value="shot_put">Shot Put</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Emergency Contact Number</label>
+                <input type="number" id="contact" name="contact" required>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
